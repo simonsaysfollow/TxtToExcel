@@ -1,4 +1,5 @@
-import tkinter as tk 
+import tkinter as tk
+import Decoder
 
 def createGUI():
     root = tk.Tk() 
@@ -10,17 +11,14 @@ def createGUI():
     canvas1.create_window(150, 150, window=button1)   
     root.mainloop()
 
+
 def readThePage():
-    page=open("test.txt", "r")
-    pageLines= page.readlines()
-    if pageLines:
-        for pageLine in pageLines:
-            # print(pageLine)
-            addToExcel(pageLine)
+    Decoder.decode("test.txt")
+    
 
 def addToExcel(fileName):
-    print(fileName)
-    clearTheTxtPage()
+    Decoder.decode(fileName)
+#    clearTheTxtPage()
 
 
 def clearTheTxtPage():
