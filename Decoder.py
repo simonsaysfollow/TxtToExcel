@@ -16,15 +16,32 @@ def decode(filename):
   
     dlstringarray.remove(metadata)
     
-  
+    # metadata = metadata.replace(" ", "")
+    # metadata = metadata.replace("\n", "")
     indexOfInfo = []
-    for x in Decoderjson.driverLicenseFields :
+    for x in Decoderjson.driverLicenseFields : 
         indexOfInfo.append(metadata.find(x['abbreviation']))
+    
 
     indexOfInfo = list(filter((-1).__ne__,indexOfInfo))
+    indexOfInfo = list(set(indexOfInfo)) 
     indexOfInfo.sort()
-   
+    # print(indexOfInfo)
+
+    res = []
     for index in range(len(indexOfInfo)-1):
         spl = slice(indexOfInfo[index], indexOfInfo[index+1])
         meta = metadata[spl]
-        print(meta)
+        res.append(meta)
+    
+    for word in res: 
+        if word == "D":
+            previousWord = res[res.index(word)-1] 
+            previousWord = previousWord + word
+            res[res.index(word)-1] = previousWord
+            # res.remove(word)
+    print(res)
+            
+            
+
+        
