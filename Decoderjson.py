@@ -6,17 +6,17 @@ driverLicenseFields = [
 		, { 'abbreviation': 'DAC', 'description': 'Given Name' }
 		, { 'abbreviation': 'DAD', 'description': 'Middle Name or Initial' }
 		, { 'abbreviation': 'DAD', 'description': 'Middle Name' }
-		, { 'abbreviation': 'DAE', 'description': 'Name Suffix' }
-		, { 'abbreviation': 'DAF', 'description': 'Name Prefix' }
+		# , { 'abbreviation': 'DAE', 'description': 'Name Suffix' }
+		# , { 'abbreviation': 'DAF', 'description': 'Name Prefix' }
 		, { 'abbreviation': 'DAG', 'description': 'Mailing Street Address1' }
 		, { 'abbreviation': 'DAH', 'description': 'Mailing Street Address2' }
 		, { 'abbreviation': 'DAI', 'description': 'Mailing City' }
 		, { 'abbreviation': 'DAJ', 'description': 'Mailing Jurisdiction Code' }
 		, { 'abbreviation': 'DAK', 'description': 'Mailing Postal Code' }
 		, { 'abbreviation': 'DAL', 'description': 'Residence Street Address1' }
-		, { 'abbreviation': 'DAM', 'description': 'Residence Street Address2' }
-		, { 'abbreviation': 'DAN', 'description': 'Residence City' }
-		, { 'abbreviation': 'DAO', 'description': 'Residence Jurisdiction Code' }
+		# , { 'abbreviation': 'DAM', 'description': 'Residence Street Address2' }
+		# , { 'abbreviation': 'DAN', 'description': 'Residence City' }
+		# , { 'abbreviation': 'DAO', 'description': 'Residence Jurisdiction Code' }
 		, { 'abbreviation': 'DAP', 'description': 'Residence Postal Code' }
 		, { 'abbreviation': 'DAQ', 'description': 'License or ID Number' }
 		, { 'abbreviation': 'DAR', 'description': 'License Classification Code' }
@@ -87,7 +87,7 @@ driverLicenseFields = [
 		, { 'abbreviation': 'PAA', 'description': 'Permit Classification Code' }
 		, { 'abbreviation': 'PAB', 'description': 'Permit Expiration Date' }
 		, { 'abbreviation': 'PAC', 'description': 'Permit Identifier' }
-		, { 'abbreviation': 'PAD', 'description': 'Permit IssueDate' }
+		# , { 'abbreviation': 'PAD', 'description': 'Permit IssueDate' }
 		, { 'abbreviation': 'PAE', 'description': 'Permit Restriction Code' }
 		, { 'abbreviation': 'PAF', 'description': 'Permit Endorsement Code' }
 		, { 'abbreviation': 'ZVA', 'description': 'Court Restriction Code' }

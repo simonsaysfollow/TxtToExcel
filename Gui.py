@@ -1,6 +1,8 @@
 import tkinter as tk
 import Decoder
 
+
+
 def createGUI():
     root = tk.Tk() 
     root.title('Excel Parser') 
@@ -16,18 +18,12 @@ def readThePage():
     Decoder.decode("test.txt")
     
 
-def addToExcel(fileName):
-    Decoder.decode(fileName)
-#    clearTheTxtPage()
-
-
 def clearTheTxtPage():
      open("test.txt","w")
 
 
 def main() :
-    createGUI()
-    # readThePage()
+    createGUI() 
     # clearTheTxtPage()
 
 if __name__ == '__main__':
